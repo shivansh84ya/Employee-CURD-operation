@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partial/header")%>
+
+    <h1>welcome to Edit data</h1>
+
+    <form action="/updatedatasave" method="post">
+        
+        <input type="hidden" value="<%=empeditdata[0]._id%>" name="mid">
+        Empid : <input type="text" value="<%=empeditdata[0].empid%>" name="eid"><br><br>
+        Empname : <input type="text" value="<%=empeditdata[0].empname%>" name="enm"><br><br>
+        Empdisgination : <input type="text" value="<%=empeditdata[0].empdisgination%>" name="edis"><br><br>
+        Empsalary : <input type="text" value="<%=empeditdata[0].empsalary%>" name="esal"><br><br>
+        
+        <button>Data update</button>
+    
+    </form>
+    
+
+</form>   
+               
+           
+</body>
+</html>

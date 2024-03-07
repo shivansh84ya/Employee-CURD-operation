@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+    <%-include("partial/header")%>
+
+    <h1>welcome to insert page</h1>
+
+    <form action="/form" method="post" enctype="multipart/form-data">
+        <h1>form of employee</h1>
+        <br>
+        Enter Empid : <input type="text" name="id"><br><br>
+        Enter Name : <input type="text" name="nm"><br><br>
+        Enter Disgination : <input type="text" name="dis"><br><br>
+        Enter Salary : <input type="text" name="sal"><br><br>
+        Upload profile : <input type="file" name="pro"><br><br>
+        <button>save data</button>
+    </form>
+</body>
+</html>

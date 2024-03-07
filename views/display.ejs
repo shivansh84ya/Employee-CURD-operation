@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%-include("partial/header")%>
+
+    <h1>Display all data </h1>
+    <div style="display: grid; grid-template-columns: auto auto auto;">
+    <%empdata.forEach((empdata)=>{%>
+        <div style="display: flex; padding: 10px; background-color: orangered; justify-content: center; border: 3px solid black; width: 400px;" >
+            <div >
+                <h3>Empid :<%=empdata.empid%></h3>
+                <h3>Empname :<%=empdata.empname%></h3>
+                <h3>Empdisgination :<%=empdata.empdisgination%></h3>
+                <h3>Empsalary :<%=empdata.empsalary%></h3>
+            </div>
+            <div style="padding-left: 20px;">
+                <div style="border: 2px solid black; width: 100px; height: 100px; overflow: hidden;  ">
+                    <img src="images/<%=empdata.empimage%>" width="100%" alt="">
+                </div>
+               
+            </div>
+           </div>
+    <%})%>
+</div>
+</body>
+</html>

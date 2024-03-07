@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+    <%-include("partial/header")%>
+
+    <h1> Search Record</h1>
+    <br> 
+   <div style="display: flex; padding: 10px; background-color: orangered; justify-content: center; border: 3px solid black; width: 400px;" >
+    <div >
+        <h3>Empid :<%=empdata[0].empid%></h3>
+        <h3>Empname :<%=empdata[0].empname%></h3>
+        <h3>Empdisgination :<%=empdata[0].empdisgination%></h3>
+        <h3>Empsalary :<%=empdata[0].empsalary%></h3>
+    </div>
+    <div style="padding-left: 20px;">
+        <div style="border: 2px solid black; width: 100px; height: 100px; overflow: hidden;  ">
+            <img src="images/<%=empdata[0].empimage%>" width="100%" alt="">
+        </div>
+       
+    </div>
+   </div>
+</body>
+</html>

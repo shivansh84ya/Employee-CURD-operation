@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightblue">
+    <%-include("partial/header")%>
+
+    <h1>welcome to update page</h1>
+
+    
+
+    <table style="border: 3px solid black;">
+        <tr >
+            <th>EmpId</th>
+            <th>Empname</th>
+            <th>Empdisgination</th>
+            <th>Empsalary</th>
+            <th>EmpProfile</th>
+            <th>Edit</th>
+        </tr>
+
+        <% empdataa.forEach((key)=>{%>
+            <tr>
+
+                <td><%=key.empid%></td>
+                <td><%=key.empname%></td>
+                <td><%=key.empdisgination%></td>
+                <td><%=key.empsalary%></td>
+                <td><img src="images/<%=key.empimage%>"  width="40px" alt=""></td>
+                <td>
+                    <a href="./edit/<%=key.id%>">
+                        <img src="images/edit.png" width="40px" alt="">
+                    </a>
+                </td>
+               
+            </tr>
+       <% }) %>
+       
+    </table>
+
+    
+</body>
+</html>
